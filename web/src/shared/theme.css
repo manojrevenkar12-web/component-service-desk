@@ -1,0 +1,58 @@
+/* Every colour, size and duration of the console. Components read these and nothing else. */
+:root {
+  --paper: #eef1f4;
+  --sheet: #f9fafb;
+  --ink: #17202b;
+  --ink-soft: #4a5563;
+  --rule: #d5dbe2;
+  --rule-strong: #b6c0cb;
+  --code: #0e7c7b;
+  --code-wash: #dcefee;
+  --person: #a96a12;
+  --person-wash: #f6ead6;
+  --no: #a23b2a;
+  --no-wash: #f5dfda;
+  --focus: #1f5fbf;
+
+  --font-body: 'Figtree Variable', system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque Variable', 'Figtree Variable', sans-serif;
+
+  --size-xs: 0.75rem;
+  --size-s: 0.8125rem;
+  --size-m: 0.9375rem;
+  --size-l: 1.25rem;
+  --size-xl: 1.75rem;
+  --size-xxl: 2.5rem;
+  --leading: 1.5;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  --radius-s: 4px;
+  --radius-m: 10px;
+  --rail: 208px;
+  --list: 380px;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--size-m);
+  line-height: var(--leading);
+  font-feature-settings: 'tnum' 1;
+}
+h1, h2, h3 { font-family: var(--font-display); font-weight: 650; letter-spacing: -0.01em; margin: 0; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

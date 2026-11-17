@@ -1,0 +1,5 @@
+{
+  "port": 8790,
+  "keys": { "agent-demo-key": "agent", "viewer-demo-key": "viewer" },
+  "seedFile": "demo/seed.json"
+}

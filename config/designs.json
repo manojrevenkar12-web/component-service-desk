@@ -1,0 +1,35 @@
+{
+  "designs": [
+    {
+      "name": "manual",
+      "label": "Agents answer everything",
+      "kind": "manual"
+    },
+    {
+      "name": "model_alone",
+      "label": "One model does it all",
+      "kind": "model_alone"
+    },
+    {
+      "name": "platform",
+      "label": "The desk",
+      "kind": "desk",
+      "rules": true,
+      "verifier": true
+    },
+    {
+      "name": "no_rules",
+      "label": "The desk, model decides",
+      "kind": "desk",
+      "rules": false,
+      "verifier": true
+    },
+    {
+      "name": "no_verifier",
+      "label": "The desk, drafts unchecked",
+      "kind": "desk",
+      "rules": true,
+      "verifier": false
+    }
+  ]
+}

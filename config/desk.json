@@ -1,0 +1,51 @@
+{
+  "baseURL": "http://models.internal/v1",
+  "models": {
+    "sm-small": {
+      "inputMicrosPerMTok": 150000,
+      "outputMicrosPerMTok": 600000
+    },
+    "sm-large": {
+      "inputMicrosPerMTok": 2500000,
+      "outputMicrosPerMTok": 10000000
+    }
+  },
+  "routes": {
+    "extract": [
+      "sm-large",
+      "sm-small"
+    ],
+    "extract_escalate": [
+      "sm-large",
+      "sm-small"
+    ],
+    "draft": [
+      "sm-large",
+      "sm-small"
+    ],
+    "redraft": [
+      "sm-large",
+      "sm-small"
+    ],
+    "decide": [
+      "sm-large",
+      "sm-small"
+    ],
+    "answer": [
+      "sm-large",
+      "sm-small"
+    ]
+  },
+  "kb": {
+    "k": 3,
+    "rrfK": 60,
+    "dims": 512,
+    "minLexical": 3,
+    "url": "https://support.stillmark.example/kb/"
+  },
+  "reviewKinds": [
+    "deny"
+  ],
+  "maxRedrafts": 1,
+  "signature": "Stillmark Support"
+}

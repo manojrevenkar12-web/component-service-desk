@@ -1,0 +1,47 @@
+{
+  "name": "component-service-desk",
+  "version": "1.0.0",
+  "description": "AI service desk for a PC hardware maker: compatibility, warranty and RMA, decided by code.",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p .",
+    "export": "tsx src/eval/cli.ts export",
+    "evaluate": "tsx src/eval/cli.ts dev",
+    "bakeoff": "tsx src/eval/cli.ts bakeoff",
+    "golden": "tsx src/eval/cli.ts golden",
+    "gate": "tsx src/eval/cli.ts gate",
+    "lock": "tsx src/eval/cli.ts lock",
+    "heldout": "tsx src/eval/cli.ts heldout",
+    "readme": "tsx src/eval/cli.ts readme",
+    "seed": "tsx src/eval/cli.ts seed",
+    "serve": "tsx src/desk/service/main.ts",
+    "world": "tsx src/world/server.ts",
+    "mcp": "tsx src/desk/service/mcp.ts"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@electric-sql/pglite-pgvector": "^0.0.17",
+    "@fastify/static": "^10.1.11",
+    "@langchain/core": "^1.4.1",
+    "@langchain/langgraph": "^1.7.5",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "fastify": "^5.12.8",
+    "openai": "^7.57.0",
+    "pdf-lib": "^1.17.1",
+    "pg": "^8.23.1",
+    "tsx": "^4.23.15",
+    "unpdf": "^1.9.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/pg": "^8.23.1",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.18"
+  }
+}

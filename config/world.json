@@ -1,0 +1,143 @@
+{
+  "start": "2026-10-05",
+  "days": 10,
+  "tickets": 450,
+  "intentMix": {
+    "compatibility": 0.4,
+    "warranty": 0.3,
+    "troubleshooting": 0.2,
+    "spare_part": 0.06,
+    "other": 0.04
+  },
+  "countryMix": {
+    "DE": 0.42,
+    "AT": 0.06,
+    "CH": 0.03,
+    "FR": 0.14,
+    "BE": 0.03,
+    "PL": 0.15,
+    "NL": 0.07,
+    "GB": 0.06,
+    "US": 0.04
+  },
+  "compatMix": {
+    "cooler_cpu": 0.2,
+    "cooler_case": 0.14,
+    "aio_case": 0.1,
+    "gpu_case": 0.14,
+    "psu_build": 0.26,
+    "psu_case": 0.08,
+    "cable_reuse": 0.08
+  },
+  "naming": {
+    "sharedAliasShare": 0.35,
+    "skuShare": 0.1
+  },
+  "newPartShare": 0.08,
+  "warranty": {
+    "productMix": {
+      "psu": 0.5,
+      "cooler": 0.2,
+      "aio": 0.12,
+      "case": 0.1,
+      "fan": 0.08
+    },
+    "invoicePdf": 0.74,
+    "invoiceScan": 0.06,
+    "serialInMail": 0.55,
+    "serialTypo": 0.15,
+    "mailDateShare": 0.5,
+    "mailDateWrong": 0.2,
+    "expiredShare": 0.2,
+    "nearExpiryShare": 0.1,
+    "followUpShare": 0.18,
+    "resentShare": 0.07
+  },
+  "injectionShare": 0.04,
+  "models": {
+    "sm-small": {
+      "outage": 0.03,
+      "dropMention": 0.05,
+      "inventQuote": 0.04,
+      "intentSlip": 0.03,
+      "vagueSymptom": 0.12,
+      "wrongLanguage": 0.04,
+      "inventNumber": 0.05,
+      "flipVerdict": 0.025
+    },
+    "sm-large": {
+      "outage": 0.005,
+      "dropMention": 0.01,
+      "inventQuote": 0.01,
+      "intentSlip": 0.01,
+      "vagueSymptom": 0.03,
+      "wrongLanguage": 0.01,
+      "inventNumber": 0.015,
+      "flipVerdict": 0.008
+    }
+  },
+  "modelAlone": {
+    "base": 0.05,
+    "kit": 0.4,
+    "cables": 0.45,
+    "unknownPart": 0.4,
+    "sharedAlias": 0.5,
+    "connector": 0.35,
+    "nearLimit": 0.3,
+    "express": 0.3,
+    "expiry": 0.12,
+    "injection": 0.45,
+    "kb": 0.15,
+    "rmaOnFollowUp": 0.6,
+    "retryOnTimeout": 1.0
+  },
+  "decideOnRecords": {
+    "base": 0.02,
+    "kit": 0.2,
+    "cables": 0.2,
+    "connector": 0.15,
+    "nearLimit": 0.2,
+    "express": 0.15,
+    "expiry": 0.1,
+    "sharedAlias": 0.35
+  },
+  "sap": {
+    "ghostTimeout": 0.05
+  },
+  "people": {
+    "agents": 1,
+    "shift": {
+      "from": 8,
+      "to": 17,
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "minutes": {
+      "compatibility": 9,
+      "warranty": 12,
+      "troubleshooting": 7,
+      "spare_part": 6,
+      "other": 8,
+      "status": 4
+    },
+    "fromPreparedFactor": 0.7,
+    "approveMinutes": 1.5,
+    "fixMinutes": 5,
+    "error": {
+      "compatibility": 0.06,
+      "warranty": 0.03,
+      "troubleshooting": 0.08,
+      "spare_part": 0.03,
+      "other": 0.0,
+      "status": 0.0
+    },
+    "duplicateRma": 0.2,
+    "catchDraftError": 0.85,
+    "costPerMinuteCents": 75
+  }
+}

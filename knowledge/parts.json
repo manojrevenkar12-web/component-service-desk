@@ -1,0 +1,186 @@
+[
+  {
+    "id": "cpu-9800x3d",
+    "kind": "cpu",
+    "name": "AMD Ryzen 7 9800X3D",
+    "aliases": [
+      "Ryzen 7 9800X3D",
+      "9800X3D"
+    ],
+    "cpu": {
+      "socket": "AM5",
+      "sizingW": 162
+    }
+  },
+  {
+    "id": "cpu-7600",
+    "kind": "cpu",
+    "name": "AMD Ryzen 5 7600",
+    "aliases": [
+      "Ryzen 5 7600"
+    ],
+    "cpu": {
+      "socket": "AM5",
+      "sizingW": 88
+    }
+  },
+  {
+    "id": "cpu-5800x3d",
+    "kind": "cpu",
+    "name": "AMD Ryzen 7 5800X3D",
+    "aliases": [
+      "Ryzen 7 5800X3D",
+      "5800X3D"
+    ],
+    "cpu": {
+      "socket": "AM4",
+      "sizingW": 142
+    }
+  },
+  {
+    "id": "cpu-265k",
+    "kind": "cpu",
+    "name": "Intel Core Ultra 7 265K",
+    "aliases": [
+      "Core Ultra 7 265K",
+      "Ultra 7 265K",
+      "265K"
+    ],
+    "cpu": {
+      "socket": "LGA1851",
+      "sizingW": 250
+    }
+  },
+  {
+    "id": "cpu-285k",
+    "kind": "cpu",
+    "name": "Intel Core Ultra 9 285K",
+    "aliases": [
+      "Core Ultra 9 285K",
+      "Ultra 9 285K",
+      "285K"
+    ],
+    "cpu": {
+      "socket": "LGA1851",
+      "sizingW": 250
+    }
+  },
+  {
+    "id": "cpu-14600k",
+    "kind": "cpu",
+    "name": "Intel Core i5-14600K",
+    "aliases": [
+      "i5-14600K",
+      "14600K"
+    ],
+    "cpu": {
+      "socket": "LGA1700",
+      "sizingW": 181
+    }
+  },
+  {
+    "id": "cpu-14900k",
+    "kind": "cpu",
+    "name": "Intel Core i9-14900K",
+    "aliases": [
+      "i9-14900K",
+      "14900K"
+    ],
+    "cpu": {
+      "socket": "LGA1700",
+      "sizingW": 253
+    }
+  },
+  {
+    "id": "gpu-n5090",
+    "kind": "gpu",
+    "name": "Nimbus RTX 5090 OC",
+    "aliases": [
+      "Nimbus RTX 5090 OC",
+      "Nimbus RTX 5090"
+    ],
+    "gpu": {
+      "boardPowerW": 600,
+      "lengthMm": 357,
+      "connector": "12v2x6"
+    }
+  },
+  {
+    "id": "gpu-a5080",
+    "kind": "gpu",
+    "name": "Aero RTX 5080",
+    "aliases": [
+      "Aero RTX 5080"
+    ],
+    "gpu": {
+      "boardPowerW": 360,
+      "lengthMm": 304,
+      "connector": "12v2x6"
+    }
+  },
+  {
+    "id": "gpu-n5070ti",
+    "kind": "gpu",
+    "name": "Nimbus RTX 5070 Ti",
+    "aliases": [
+      "Nimbus RTX 5070 Ti"
+    ],
+    "gpu": {
+      "boardPowerW": 300,
+      "lengthMm": 312,
+      "connector": "12v2x6"
+    }
+  },
+  {
+    "id": "gpu-a5070",
+    "kind": "gpu",
+    "name": "Aero RTX 5070",
+    "aliases": [
+      "Aero RTX 5070"
+    ],
+    "gpu": {
+      "boardPowerW": 250,
+      "lengthMm": 242,
+      "connector": "12v2x6"
+    }
+  },
+  {
+    "id": "gpu-v9070xt",
+    "kind": "gpu",
+    "name": "Volta RX 9070 XT",
+    "aliases": [
+      "Volta RX 9070 XT"
+    ],
+    "gpu": {
+      "boardPowerW": 304,
+      "lengthMm": 322,
+      "connector": "3x8pin"
+    }
+  },
+  {
+    "id": "gpu-v9060xt",
+    "kind": "gpu",
+    "name": "Volta RX 9060 XT",
+    "aliases": [
+      "Volta RX 9060 XT"
+    ],
+    "gpu": {
+      "boardPowerW": 160,
+      "lengthMm": 230,
+      "connector": "1x8pin"
+    }
+  },
+  {
+    "id": "gpu-a5060ti",
+    "kind": "gpu",
+    "name": "Aero RTX 5060 Ti",
+    "aliases": [
+      "Aero RTX 5060 Ti"
+    ],
+    "gpu": {
+      "boardPowerW": 180,
+      "lengthMm": 228,
+      "connector": "1x8pin"
+    }
+  }
+]

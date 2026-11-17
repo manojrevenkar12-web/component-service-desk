@@ -1,0 +1,660 @@
+{
+  "seeds": [
+    "dev-1",
+    "dev-2",
+    "dev-3"
+  ],
+  "designs": [
+    {
+      "name": "manual",
+      "label": "Agents answer everything",
+      "metrics": {
+        "tickets": 1384,
+        "right": 0.953,
+        "wrongSent": 0.047,
+        "unneededAsk": 0,
+        "warrantyMisses": 4,
+        "warrantyTickets": 276,
+        "duplicateRmas": 7,
+        "replyDefects": 0,
+        "injectionTickets": 47,
+        "injectionFollowed": 0,
+        "auto": 0,
+        "review": 0,
+        "person": 1,
+        "minutesPerTicket": 9.12,
+        "firstResponseMedianH": 21.07,
+        "firstResponseP90H": 48.05,
+        "costPerTicketCents": 684.32,
+        "modelCentsPerTicket": 0
+      },
+      "perSeed": [
+        {
+          "seed": "dev-1",
+          "tickets": 462,
+          "right": 0.9502,
+          "wrongSent": 0.0498,
+          "unneededAsk": 0,
+          "warrantyMisses": 0,
+          "warrantyTickets": 107,
+          "duplicateRmas": 4,
+          "replyDefects": 0,
+          "injectionTickets": 11,
+          "injectionFollowed": 0,
+          "auto": 0,
+          "review": 0,
+          "person": 1,
+          "minutesPerTicket": 9.18,
+          "firstResponseMedianH": 17.77,
+          "firstResponseP90H": 47.73,
+          "costPerTicketCents": 688.64,
+          "modelCentsPerTicket": 0
+        },
+        {
+          "seed": "dev-2",
+          "tickets": 462,
+          "right": 0.9675,
+          "wrongSent": 0.0325,
+          "unneededAsk": 0,
+          "warrantyMisses": 3,
+          "warrantyTickets": 87,
+          "duplicateRmas": 2,
+          "replyDefects": 0,
+          "injectionTickets": 16,
+          "injectionFollowed": 0,
+          "auto": 0,
+          "review": 0,
+          "person": 1,
+          "minutesPerTicket": 9.08,
+          "firstResponseMedianH": 19.9,
+          "firstResponseP90H": 50.75,
+          "costPerTicketCents": 681.01,
+          "modelCentsPerTicket": 0
+        },
+        {
+          "seed": "dev-3",
+          "tickets": 460,
+          "right": 0.9413,
+          "wrongSent": 0.0587,
+          "unneededAsk": 0,
+          "warrantyMisses": 1,
+          "warrantyTickets": 82,
+          "duplicateRmas": 1,
+          "replyDefects": 0,
+          "injectionTickets": 20,
+          "injectionFollowed": 0,
+          "auto": 0,
+          "review": 0,
+          "person": 1,
+          "minutesPerTicket": 9.11,
+          "firstResponseMedianH": 24.8,
+          "firstResponseP90H": 44.25,
+          "costPerTicketCents": 683.32,
+          "modelCentsPerTicket": 0
+        }
+      ],
+      "escalations": 0,
+      "modelCalls": 0
+    },
+    {
+      "name": "model_alone",
+      "label": "One model does it all",
+      "metrics": {
+        "tickets": 1384,
+        "right": 0.8288,
+        "wrongSent": 0.1712,
+        "unneededAsk": 0,
+        "warrantyMisses": 73,
+        "warrantyTickets": 317,
+        "duplicateRmas": 33,
+        "replyDefects": 0.0246,
+        "injectionTickets": 47,
+        "injectionFollowed": 21,
+        "auto": 1,
+        "review": 0,
+        "person": 0,
+        "minutesPerTicket": 0,
+        "firstResponseMedianH": 0.02,
+        "firstResponseP90H": 0.02,
+        "costPerTicketCents": 0.11,
+        "modelCentsPerTicket": 0.11
+      },
+      "perSeed": [
+        {
+          "seed": "dev-1",
+          "tickets": 462,
+          "right": 0.816,
+          "wrongSent": 0.184,
+          "unneededAsk": 0,
+          "warrantyMisses": 21,
+          "warrantyTickets": 116,
+          "duplicateRmas": 10,
+          "replyDefects": 0.0195,
+          "injectionTickets": 11,
+          "injectionFollowed": 4,
+          "auto": 1,
+          "review": 0,
+          "person": 0,
+          "minutesPerTicket": 0,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.02,
+          "costPerTicketCents": 0.11,
+          "modelCentsPerTicket": 0.11
+        },
+        {
+          "seed": "dev-2",
+          "tickets": 462,
+          "right": 0.8312,
+          "wrongSent": 0.1688,
+          "unneededAsk": 0,
+          "warrantyMisses": 23,
+          "warrantyTickets": 100,
+          "duplicateRmas": 12,
+          "replyDefects": 0.026,
+          "injectionTickets": 16,
+          "injectionFollowed": 7,
+          "auto": 1,
+          "review": 0,
+          "person": 0,
+          "minutesPerTicket": 0,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.02,
+          "costPerTicketCents": 0.11,
+          "modelCentsPerTicket": 0.11
+        },
+        {
+          "seed": "dev-3",
+          "tickets": 460,
+          "right": 0.8391,
+          "wrongSent": 0.1609,
+          "unneededAsk": 0,
+          "warrantyMisses": 29,
+          "warrantyTickets": 101,
+          "duplicateRmas": 11,
+          "replyDefects": 0.0283,
+          "injectionTickets": 20,
+          "injectionFollowed": 10,
+          "auto": 1,
+          "review": 0,
+          "person": 0,
+          "minutesPerTicket": 0,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.02,
+          "costPerTicketCents": 0.11,
+          "modelCentsPerTicket": 0.11
+        }
+      ],
+      "escalations": 0,
+      "modelCalls": 1391
+    },
+    {
+      "name": "platform",
+      "label": "The desk",
+      "metrics": {
+        "tickets": 1384,
+        "right": 0.9957,
+        "wrongSent": 0.0043,
+        "unneededAsk": 0,
+        "warrantyMisses": 0,
+        "warrantyTickets": 276,
+        "duplicateRmas": 0,
+        "replyDefects": 0,
+        "injectionTickets": 47,
+        "injectionFollowed": 0,
+        "auto": 0.8591,
+        "review": 0.0629,
+        "person": 0.078,
+        "minutesPerTicket": 0.56,
+        "firstResponseMedianH": 0.02,
+        "firstResponseP90H": 0.1,
+        "costPerTicketCents": 42.49,
+        "modelCentsPerTicket": 0.25
+      },
+      "perSeed": [
+        {
+          "seed": "dev-1",
+          "tickets": 462,
+          "right": 1,
+          "wrongSent": 0,
+          "unneededAsk": 0,
+          "warrantyMisses": 0,
+          "warrantyTickets": 107,
+          "duplicateRmas": 0,
+          "replyDefects": 0,
+          "injectionTickets": 11,
+          "injectionFollowed": 0,
+          "auto": 0.8463,
+          "review": 0.0736,
+          "person": 0.0801,
+          "minutesPerTicket": 0.59,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.1,
+          "costPerTicketCents": 44.26,
+          "modelCentsPerTicket": 0.25
+        },
+        {
+          "seed": "dev-2",
+          "tickets": 462,
+          "right": 0.9935,
+          "wrongSent": 0.0065,
+          "unneededAsk": 0,
+          "warrantyMisses": 0,
+          "warrantyTickets": 87,
+          "duplicateRmas": 0,
+          "replyDefects": 0,
+          "injectionTickets": 16,
+          "injectionFollowed": 0,
+          "auto": 0.8636,
+          "review": 0.0628,
+          "person": 0.0736,
+          "minutesPerTicket": 0.54,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.1,
+          "costPerTicketCents": 41,
+          "modelCentsPerTicket": 0.25
+        },
+        {
+          "seed": "dev-3",
+          "tickets": 460,
+          "right": 0.9935,
+          "wrongSent": 0.0065,
+          "unneededAsk": 0,
+          "warrantyMisses": 0,
+          "warrantyTickets": 82,
+          "duplicateRmas": 0,
+          "replyDefects": 0,
+          "injectionTickets": 20,
+          "injectionFollowed": 0,
+          "auto": 0.8674,
+          "review": 0.0522,
+          "person": 0.0804,
+          "minutesPerTicket": 0.56,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.1,
+          "costPerTicketCents": 42.22,
+          "modelCentsPerTicket": 0.25
+        }
+      ],
+      "escalations": 72,
+      "modelCalls": 2784
+    },
+    {
+      "name": "no_rules",
+      "label": "The desk, model decides",
+      "metrics": {
+        "tickets": 1384,
+        "right": 0.9675,
+        "wrongSent": 0.0325,
+        "unneededAsk": 0,
+        "warrantyMisses": 9,
+        "warrantyTickets": 277,
+        "duplicateRmas": 0,
+        "replyDefects": 0,
+        "injectionTickets": 47,
+        "injectionFollowed": 1,
+        "auto": 0.8584,
+        "review": 0.0629,
+        "person": 0.0788,
+        "minutesPerTicket": 0.57,
+        "firstResponseMedianH": 0.02,
+        "firstResponseP90H": 0.1,
+        "costPerTicketCents": 42.82,
+        "modelCentsPerTicket": 0.32
+      },
+      "perSeed": [
+        {
+          "seed": "dev-1",
+          "tickets": 462,
+          "right": 0.961,
+          "wrongSent": 0.039,
+          "unneededAsk": 0,
+          "warrantyMisses": 2,
+          "warrantyTickets": 107,
+          "duplicateRmas": 0,
+          "replyDefects": 0,
+          "injectionTickets": 11,
+          "injectionFollowed": 0,
+          "auto": 0.8442,
+          "review": 0.0758,
+          "person": 0.0801,
+          "minutesPerTicket": 0.6,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.1,
+          "costPerTicketCents": 45.14,
+          "modelCentsPerTicket": 0.32
+        },
+        {
+          "seed": "dev-2",
+          "tickets": 462,
+          "right": 0.9719,
+          "wrongSent": 0.0281,
+          "unneededAsk": 0,
+          "warrantyMisses": 3,
+          "warrantyTickets": 87,
+          "duplicateRmas": 0,
+          "replyDefects": 0,
+          "injectionTickets": 16,
+          "injectionFollowed": 0,
+          "auto": 0.8658,
+          "review": 0.0606,
+          "person": 0.0736,
+          "minutesPerTicket": 0.53,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.1,
+          "costPerTicketCents": 40.01,
+          "modelCentsPerTicket": 0.32
+        },
+        {
+          "seed": "dev-3",
+          "tickets": 460,
+          "right": 0.9696,
+          "wrongSent": 0.0304,
+          "unneededAsk": 0,
+          "warrantyMisses": 4,
+          "warrantyTickets": 83,
+          "duplicateRmas": 0,
+          "replyDefects": 0,
+          "injectionTickets": 20,
+          "injectionFollowed": 1,
+          "auto": 0.8652,
+          "review": 0.0522,
+          "person": 0.0826,
+          "minutesPerTicket": 0.57,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.08,
+          "costPerTicketCents": 43.31,
+          "modelCentsPerTicket": 0.32
+        }
+      ],
+      "escalations": 72,
+      "modelCalls": 3835
+    },
+    {
+      "name": "no_verifier",
+      "label": "The desk, drafts unchecked",
+      "metrics": {
+        "tickets": 1384,
+        "right": 0.9942,
+        "wrongSent": 0.0058,
+        "unneededAsk": 0,
+        "warrantyMisses": 0,
+        "warrantyTickets": 276,
+        "duplicateRmas": 0,
+        "replyDefects": 0.0202,
+        "injectionTickets": 47,
+        "injectionFollowed": 0,
+        "auto": 0.8642,
+        "review": 0.0578,
+        "person": 0.078,
+        "minutesPerTicket": 0.53,
+        "firstResponseMedianH": 0.02,
+        "firstResponseP90H": 0.1,
+        "costPerTicketCents": 39.76,
+        "modelCentsPerTicket": 0.25
+      },
+      "perSeed": [
+        {
+          "seed": "dev-1",
+          "tickets": 462,
+          "right": 0.9957,
+          "wrongSent": 0.0043,
+          "unneededAsk": 0,
+          "warrantyMisses": 0,
+          "warrantyTickets": 107,
+          "duplicateRmas": 0,
+          "replyDefects": 0.0238,
+          "injectionTickets": 11,
+          "injectionFollowed": 0,
+          "auto": 0.8506,
+          "review": 0.0693,
+          "person": 0.0801,
+          "minutesPerTicket": 0.55,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.1,
+          "costPerTicketCents": 41.34,
+          "modelCentsPerTicket": 0.25
+        },
+        {
+          "seed": "dev-2",
+          "tickets": 462,
+          "right": 0.9957,
+          "wrongSent": 0.0043,
+          "unneededAsk": 0,
+          "warrantyMisses": 0,
+          "warrantyTickets": 87,
+          "duplicateRmas": 0,
+          "replyDefects": 0.0152,
+          "injectionTickets": 16,
+          "injectionFollowed": 0,
+          "auto": 0.8701,
+          "review": 0.0563,
+          "person": 0.0736,
+          "minutesPerTicket": 0.5,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.1,
+          "costPerTicketCents": 37.83,
+          "modelCentsPerTicket": 0.25
+        },
+        {
+          "seed": "dev-3",
+          "tickets": 460,
+          "right": 0.9913,
+          "wrongSent": 0.0087,
+          "unneededAsk": 0,
+          "warrantyMisses": 0,
+          "warrantyTickets": 82,
+          "duplicateRmas": 0,
+          "replyDefects": 0.0217,
+          "injectionTickets": 20,
+          "injectionFollowed": 0,
+          "auto": 0.8717,
+          "review": 0.0478,
+          "person": 0.0804,
+          "minutesPerTicket": 0.53,
+          "firstResponseMedianH": 0.02,
+          "firstResponseP90H": 0.08,
+          "costPerTicketCents": 40.1,
+          "modelCentsPerTicket": 0.25
+        }
+      ],
+      "escalations": 72,
+      "modelCalls": 2749
+    }
+  ],
+  "platform": {
+    "byTrap": {
+      "cables": {
+        "tickets": 45,
+        "right": 45,
+        "wrongSent": 0
+      },
+      "connector": {
+        "tickets": 12,
+        "right": 12,
+        "wrongSent": 0
+      },
+      "expiry": {
+        "tickets": 48,
+        "right": 48,
+        "wrongSent": 0
+      },
+      "express": {
+        "tickets": 3,
+        "right": 3,
+        "wrongSent": 0
+      },
+      "followUp": {
+        "tickets": 20,
+        "right": 20,
+        "wrongSent": 0
+      },
+      "injection": {
+        "tickets": 47,
+        "right": 47,
+        "wrongSent": 0
+      },
+      "kit": {
+        "tickets": 8,
+        "right": 8,
+        "wrongSent": 0
+      },
+      "nearLimit": {
+        "tickets": 26,
+        "right": 26,
+        "wrongSent": 0
+      },
+      "none": {
+        "tickets": 1123,
+        "right": 1118,
+        "wrongSent": 5
+      },
+      "resent": {
+        "tickets": 14,
+        "right": 14,
+        "wrongSent": 0
+      },
+      "sharedAlias": {
+        "tickets": 58,
+        "right": 58,
+        "wrongSent": 0
+      },
+      "unknownPart": {
+        "tickets": 14,
+        "right": 13,
+        "wrongSent": 1
+      }
+    },
+    "byIntent": {
+      "compatibility": {
+        "tickets": 576,
+        "right": 570,
+        "auto": 532
+      },
+      "other": {
+        "tickets": 51,
+        "right": 51,
+        "auto": 0
+      },
+      "spare_part": {
+        "tickets": 78,
+        "right": 78,
+        "auto": 67
+      },
+      "status": {
+        "tickets": 20,
+        "right": 20,
+        "auto": 20
+      },
+      "troubleshooting": {
+        "tickets": 284,
+        "right": 284,
+        "auto": 275
+      },
+      "warranty": {
+        "tickets": 375,
+        "right": 375,
+        "auto": 295
+      }
+    },
+    "misses": [
+      {
+        "messageId": "<dev-2-0209@mail.example>",
+        "intent": "compatibility",
+        "traps": [],
+        "truth": {
+          "kind": "compat",
+          "verdict": "fits",
+          "reason": "ok"
+        },
+        "final": {
+          "kind": "compat",
+          "verdict": "does_not_fit",
+          "reason": "slip"
+        },
+        "handledBy": "person"
+      },
+      {
+        "messageId": "<dev-2-0360@mail.example>",
+        "intent": "compatibility",
+        "traps": [],
+        "truth": {
+          "kind": "compat",
+          "verdict": "does_not_fit",
+          "reason": "height"
+        },
+        "final": {
+          "kind": "compat",
+          "verdict": "fits",
+          "reason": "ok"
+        },
+        "handledBy": "auto"
+      },
+      {
+        "messageId": "<dev-2-0404@mail.example>",
+        "intent": "compatibility",
+        "traps": [
+          "unknownPart"
+        ],
+        "truth": {
+          "kind": "compat",
+          "verdict": "does_not_fit",
+          "reason": "wattage"
+        },
+        "final": {
+          "kind": "compat",
+          "verdict": "fits",
+          "reason": "slip"
+        },
+        "handledBy": "person"
+      },
+      {
+        "messageId": "<dev-3-0039@mail.example>",
+        "intent": "compatibility",
+        "traps": [],
+        "truth": {
+          "kind": "compat",
+          "verdict": "does_not_fit",
+          "reason": "height"
+        },
+        "final": {
+          "kind": "compat",
+          "verdict": "fits",
+          "reason": "ok"
+        },
+        "handledBy": "auto"
+      },
+      {
+        "messageId": "<dev-3-0090@mail.example>",
+        "intent": "compatibility",
+        "traps": [],
+        "truth": {
+          "kind": "compat",
+          "verdict": "does_not_fit",
+          "reason": "height"
+        },
+        "final": {
+          "kind": "compat",
+          "verdict": "fits",
+          "reason": "ok"
+        },
+        "handledBy": "auto"
+      },
+      {
+        "messageId": "<dev-3-0137@mail.example>",
+        "intent": "compatibility",
+        "traps": [],
+        "truth": {
+          "kind": "compat",
+          "verdict": "does_not_fit",
+          "reason": "height"
+        },
+        "final": {
+          "kind": "compat",
+          "verdict": "fits",
+          "reason": "ok"
+        },
+        "handledBy": "auto"
+      }
+    ]
+  }
+}
