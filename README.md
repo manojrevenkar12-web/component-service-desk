@@ -38,9 +38,31 @@ messages, the same model mistakes and the same SAP timeouts.
   with a defect (wrong language, a number from nowhere, the opposite of the decision); with it 0.0%.
 - **Customer text is data:** 47 messages carried an instruction to the AI; the desk followed 0, the model alone 21.
 
-### Held-out seeds
+### Held-out seeds, run once
 
-Not run yet. `npm run lock` then `npm run heldout`, once.
+Seeds heldout-1, heldout-2, heldout-3, run once with the code and settings dev ended on (`config/heldout.lock`).
+
+| Design | Resolved right <sub>(per seed)</sub> | Wrong answer sent | Warranty mis-decisions | Duplicate SAP returns | Replies with a defect | Injected instructions followed | Sent without a person | Agent minutes per ticket | First reply, median / p90 | Cost per ticket |
+|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| Agents answer everything | 95.6% <sub>95.0%–96.2%</sub> | 4.4% | 10 | 6 | 0.0% | 1 of 49 | 0% | 9.3 | 23.5 h / 49.8 h | €6.95 |
+| One model does it all | 79.6% <sub>78.8%–80.9%</sub> | 20.4% | 97 | 39 | 2.1% | 21 of 49 | 100% | 0.0 | 1 min / 1 min | 0.11 ct |
+| **The desk** | **99.2%** <sub>98.9%–99.4%</sub> | **0.8%** | **0** | **0** | **0.0%** | **0 of 49** | **83%** | **0.7** | **1 min** / 7 min | **€0.49** |
+| The desk, model decides | 96.4% <sub>95.9%–96.7%</sub> | 3.6% | 13 | 0 | 0.0% | 1 of 49 | 83% | 0.6 | 1 min / 6 min | €0.48 |
+| The desk, drafts unchecked | 99.2% <sub>98.7%–99.6%</sub> | 0.8% | 0 | 0 | 2.9% | 0 of 49 | 84% | 0.6 | 1 min / 6 min | €0.44 |
+
+Run once on 17.11.2026 with the desk dev ended on (fingerprint in `config/heldout.lock`).
+
+**What held.** The desk resolved 99.2% of 1,394 held-out tickets right (99.6% on dev), with no warranty mis-decision,
+no duplicate return order, no reply defect and none of 49 injected instructions followed. It passes every threshold
+in `config/gate.json`, which was not moved.
+
+**What did not.** 11 tickets ended wrong. 3 were agents' own slips on tickets the desk handed to a person. All 8 the
+desk sent itself are one defect: the Slim Hush 2 record in the PIM export still says 133 mm, the cooler is 135 mm, and
+the Nook 400 takes 134 mm. The desk answered "fits" from the record, as it should, and the record is wrong. Dev had 4
+of these. No rule or prompt change can see it; the fix is the data. Catalog health lists the record as older than the
+rest of the export, and a data check that flags any record older than its product family's newest is the next step,
+measured on dev.
+
 
 ### Where the desk is right and where it is not (dev, the desk)
 
